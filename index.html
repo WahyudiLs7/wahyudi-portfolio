@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wahyudi — Data Engineering Portfolio. Explore AeroHealth Data Pipeline, an automated end-to-end data engineering project.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Wahyudi | Data Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#home">W<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav">
+        <a href="#about">About</a><a href="#project">Project</a><a href="#architecture">Architecture</a><a href="#results">Results</a><a class="nav-contact" href="#contact">Contact ↗</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse"></span> DATA ENGINEERING PORTFOLIO</div>
+          <h1>Turning data into<br><em>meaningful insights.</em></h1>
+          <p class="hero-lead">Hi, I'm <strong>Wahyudi</strong> — an Informatics graduate building practical data pipelines, from extraction and orchestration to transformation and visualization.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#project">Explore my project <span>↘</span></a>
+            <a class="btn secondary" href="https://github.com/WahyudiLs7" target="_blank" rel="noreferrer">GitHub profile ↗</a>
+          </div>
+          <div class="hero-meta"><span>Based in Pekanbaru, Indonesia</span><span class="meta-dot"></span><span>Python · SQL · Airflow · dbt</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Data pipeline illustration">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="visual-core"><div class="core-icon">⌘</div><span>DATA<br>PIPELINE</span></div>
+          <div class="float-card card-python"><b>Py</b><span>Extract</span></div>
+          <div class="float-card card-airflow"><b>↗</b><span>Orchestrate</span></div>
+          <div class="float-card card-dbt"><b>dbt</b><span>Transform</span></div>
+          <div class="float-card card-bi"><b>▥</b><span>Visualize</span></div>
+          <div class="visual-caption">FROM RAW DATA TO ACTIONABLE INSIGHT</div>
+        </div>
+      </section>
+
+      <section class="metrics">
+        <div><strong>01</strong><span>Featured end-to-end project</span></div>
+        <div><strong>10</strong><span>Airflow tasks orchestrated</span></div>
+        <div><strong>2</strong><span>Integrated data sources</span></div>
+        <div><strong>@daily</strong><span>Automated execution schedule</span></div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-kicker">01 / ABOUT ME</div>
+        <div class="section-grid">
+          <div><h2>Curious by nature.<br><em>Driven by data.</em></h2></div>
+          <div class="about-copy">
+            <p>I'm an Informatics Engineering graduate with prior experience in office administration and IT support. My interest in data engineering grew from handling large volumes of data manually — I saw firsthand how much impact automation and structured data processes could have.</p>
+            <p>Building AeroHealth gave me the opportunity to work across the full data engineering lifecycle: extraction, orchestration, storage, transformation, and visualization, while exploring a problem with social relevance.</p>
+            <div class="profile-facts">
+              <div><small>EDUCATION</small><b>S1 Teknik Informatika</b></div>
+              <div><small>EXPERIENCE</small><b>IT Support</b></div>
+              <div><small>LOCATION</small><b>Pekanbaru, Indonesia</b></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section project-section" id="project">
+        <div class="section-kicker">02 / FEATURED PROJECT</div>
+        <div class="project-heading">
+          <div><h2>AeroHealth<br><em>Data Pipeline.</em></h2></div>
+          <a class="text-link" href="https://github.com/WahyudiLs7/aerohealth-data-pipeline" target="_blank" rel="noreferrer">View repository ↗</a>
+        </div>
+        <p class="project-intro">An end-to-end data pipeline that automatically collects air quality (AQI) data and respiratory symptom search trends every day, then combines them to explore whether worsening air quality is followed by a rise in symptom-related searches.</p>
+        <div class="question-card"><span>THE QUESTION</span><p>“When AQI in Pekanbaru worsens, do residents search more for respiratory symptoms online?”</p></div>
+        <div class="project-tags"><span>Python</span><span>Apache Airflow</span><span>PostgreSQL</span><span>MinIO</span><span>dbt</span><span>Metabase</span><span>Docker Compose</span></div>
+      </section>
+
+      <section class="section problem-section">
+        <div class="section-kicker">03 / PROBLEM & CONTEXT</div>
+        <h2>Why this project <em>matters.</em></h2>
+        <div class="problem-grid">
+          <article><b>01</b><h3>Volatile air quality</h3><p>Pekanbaru's AQI changes rapidly due to weather and seasonal haze, but is rarely monitored alongside its possible impact on residents' health.</p></article>
+          <article><b>02</b><h3>Scattered health signals</h3><p>Searches for symptoms such as shortness of breath and cough medicine can provide an additional signal that is not usually combined with air quality data.</p></article>
+          <article><b>03</b><h3>Disconnected sources</h3><p>AQI and search trend data come from separate sources, use different formats, and need to be unified reliably.</p></article>
+          <article><b>04</b><h3>Need for automation</h3><p>A repeatable process is needed to extract, store, clean, combine, and visualize the data without manual intervention.</p></article>
+        </div>
+      </section>
+
+      <section class="section architecture-section" id="architecture">
+        <div class="section-kicker">04 / SOLUTION — ARCHITECTURE</div>
+        <h2>From source to <em>insight.</em></h2>
+        <p class="section-sub">Each stage is separated so components can be developed and operated independently.</p>
+        <div class="pipeline">
+          <div class="pipe-step"><div class="pipe-icon">01</div><small>EXTRACT</small><h3>Python</h3><p>IQAir API<br>Google Trends</p></div>
+          <div class="pipe-arrow">→</div>
+          <div class="pipe-step"><div class="pipe-icon">02</div><small>RAW ZONE</small><h3>MinIO</h3><p>Object storage<br>Daily CSV files</p></div>
+          <div class="pipe-arrow">→</div>
+          <div class="pipe-step"><div class="pipe-icon">03</div><small>LOAD</small><h3>PostgreSQL</h3><p>Raw tables<br>aerohealth_dwh</p></div>
+          <div class="pipe-arrow">→</div>
+          <div class="pipe-step"><div class="pipe-icon">04</div><small>TRANSFORM</small><h3>dbt</h3><p>Staging →<br>Dimensional → Gold</p></div>
+          <div class="pipe-arrow">→</div>
+          <div class="pipe-step"><div class="pipe-icon">05</div><small>VISUALIZE</small><h3>Metabase</h3><p>Correlation<br>dashboard</p></div>
+        </div>
+        <div class="orchestration-note"><span>⚙</span><p><strong>Orchestrated by Apache Airflow 2.8.1 (LocalExecutor)</strong><br>Runs inside Docker Compose and is scheduled automatically every day with <code>@daily</code>.</p></div>
+        
+      </section>
+
+      <section class="section modeling-section">
+        <div class="section-kicker">05 / DATA MODELING</div>
+        <h2>Medallion layers &<br><em>dimensional model.</em></h2>
+        <div class="layers">
+          <article class="layer bronze"><span>BRONZE</span><h3>Raw</h3><p><code>raw_iqair</code> and <code>raw_google_trends</code> in PostgreSQL, with daily CSV files stored in the MinIO <code>aerohealth-raw</code> bucket.</p></article>
+          <article class="layer silver"><span>SILVER</span><h3>Staging + Dimensional</h3><p>Staging views, intermediate correlation model, and dimensional tables: <code>dim_tanggal</code>, <code>dim_lokasi</code>, and <code>fact_health_correlation</code>.</p></article>
+          <article class="layer gold"><span>GOLD</span><h3>BI-ready mart</h3><p><code>gold_health_correlation</code> is a flattened table, pre-joined for direct use in the BI dashboard.</p></article>
+        </div>
+        <div class="model-detail">
+          <div><small>STAR SCHEMA — SILVER LAYER</small><h3>One fact table, two dimensions.</h3><p>The fact table holds daily AQI, weather, and symptom search-trend metrics, with a grain of one row per date and location.</p></div>
+          <div class="schema">
+            <div class="schema-dim">dim_tanggal<br><small>Calendar attributes</small></div>
+            <div class="schema-fact">fact_health_correlation<br><small>Daily AQI · weather · search trends</small></div>
+            <div class="schema-dim">dim_lokasi<br><small>City · province</small></div>
+          </div>
+        </div>
+        <figure class="deck-image"><img src="assets/slide-7-1.jpg" alt="AeroHealth dimensional model from the original presentation" loading="lazy"><figcaption>AeroHealth dimensional model from the original presentation</figcaption></figure>
+      </section>
+
+      <section class="section orchestration-section">
+        <div class="section-kicker">06 / ORCHESTRATION</div>
+        <h2>Reliable workflows,<br><em>scheduled daily.</em></h2>
+        <p class="section-sub">The DAG contains 10 tasks. Extraction and staging run in parallel per source, dimensions run in parallel per table, then the fact and Gold models run in sequence.</p>
+        <figure class="deck-image"><img src="assets/slide-8-1.png" alt="Airflow DAG orchestration from the original presentation" loading="lazy"><figcaption>Airflow DAG orchestration from the original presentation</figcaption></figure>
+        <div class="task-flow"><span>Extract sources</span><i>→</i><span>Load raw data</span><i>→</i><span>Build staging</span><i>→</i><span>Dimensions</span><i>→</i><span>Fact & Gold</span></div>
+      </section>
+
+      <section class="section stack-section">
+        <div class="section-kicker">07 / TECH STACK</div>
+        <h2>Tools behind the <em>pipeline.</em></h2>
+        <div class="stack-grid">
+          <div><b>Py</b><h3>Python</h3><p>Extraction with pandas, requests, and pytrends.</p></div>
+          <div><b>◷</b><h3>Apache Airflow 2.8.1</h3><p>Workflow orchestration using LocalExecutor.</p></div>
+          <div><b>▤</b><h3>PostgreSQL 13</h3><p>Data warehouse and raw data tables.</p></div>
+          <div><b>◫</b><h3>MinIO</h3><p>Object storage for the raw zone.</p></div>
+          <div><b>dbt</b><h3>dbt-postgres</h3><p>Data transformation across three layers.</p></div>
+          <div><b>▥</b><h3>Metabase</h3><p>Dashboard and data visualization.</p></div>
+          <div><b>▦</b><h3>Docker Compose</h3><p>Containerization of project services.</p></div>
+        </div>
+      </section>
+
+      <section class="section quality-section">
+        <div class="section-kicker">08 / DATA QUALITY</div>
+        <h2>Issues found & <em>addressed.</em></h2>
+        <div class="quality-list">
+          <article><span class="status fixed">FIXED</span><div><h3>Duplicate data</h3><p>Repeated manual triggers and Google Trends retrieving a 30-day window on each call caused duplicate rows. Addressed with <code>AVG()</code> aggregation per date in the intermediate layer.</p></div></article>
+          <article><span class="status fixed">FIXED</span><div><h3>AQI null handling</h3><p>IQAir's free tier cannot backfill historical data. Missing AQI is represented with an explicit “Weather Data Missing” label in <code>status_risiko_udara</code>.</p></div></article>
+          <article><span class="status fixed">FIXED</span><div><h3>Hardcoded credentials</h3><p>Credentials were moved into environment variables in <code>.env</code> and are not committed to Git.</p></div></article>
+          <article><span class="status gap">KNOWN GAP</span><div><h3>Silent failure on load</h3><p><code>load_to_postgres.py</code> only prints a warning when a CSV is missing. Airflow may still report success with zero rows loaded. This remains a reliability improvement priority.</p></div></article>
+        </div>
+      </section>
+
+      <section class="section results-section" id="results">
+        <div class="section-kicker">09 / RESULTS & INSIGHTS</div>
+        <h2>Exploring the relationship<br>between <em>AQI and search trends.</em></h2>
+        <p class="section-sub">Metabase dashboard based on the <code>fact_health_correlation</code> model, covering August 26 – September 18, 2026.</p>
+        <figure class="dashboard-image"><img src="assets/slide-11-1.png" alt="Metabase dashboard from the original presentation" loading="lazy"><figcaption>Metabase dashboard from the original presentation</figcaption></figure>
+        <div class="result-stats"><div><strong>65–225</strong><span>AQI US range in the observation period</span></div><div><strong>3</strong><span>Health search keywords monitored</span></div><div><strong>Aug–Sep 2026</strong><span>Observation window</span></div></div>
+        <div class="insight-grid">
+          <article><b>01</b><p>A rise in AQI visually tends to be followed by a rise in “shortness of breath” search trends a few days later.</p></article>
+          <article><b>02</b><p>The pattern appears clearest when AQI is above approximately 150, in the unhealthy category.</p></article>
+          <article><b>03</b><p>When AQI improves, search trends also appear to taper off.</p></article>
+        </div>
+        <div class="caution"><strong>Interpretation with caution</strong><p>These observations are not proof of a statistical relationship or causation. The pattern has not yet been tested with Pearson correlation; the historical sample is small, AQI is city-level while Trends is province-level, and other factors have not been controlled for.</p></div>
+      </section>
+
+      <section class="section reflection-section">
+        <div class="section-kicker">10 / REFLECTION & NEXT STEPS</div>
+        <div class="reflection-grid">
+          <div><h2>What I learned<br><em>and what comes next.</em></h2><p class="section-sub">The project evolved through mentor feedback and iterative improvements to the architecture and data model.</p></div>
+          <div class="roadmap">
+            <div><b>01</b><p><strong>Migrate to cloud</strong><br>Move workloads to GCP or AWS to reduce local resource usage.</p></div>
+            <div><b>02</b><p><strong>Add dbt tests</strong><br>Introduce not_null, unique, and relationships checks.</p></div>
+            <div><b>03</b><p><strong>Add alerting</strong><br>Notify when an Airflow task fails and address silent failures.</p></div>
+            <div><b>04</b><p><strong>Expand to multi-city</strong><br>Extend the location dimension beyond Pekanbaru.</p></div>
+            <div><b>05</b><p><strong>Add data sources</strong><br>Explore rainfall and real ISPA case data.</p></div>
+            <div><b>06</b><p><strong>Formal statistical test</strong><br>Calculate Pearson correlation when enough historical data is available.</p></div>
+          </div>
+        </div>
+        <div class="limitations"><strong>Current limitations</strong><span>Limited historical data</span><span>High local resource usage</span><span>No automated dbt tests yet</span><span>No failure alerting yet</span><span>Visual correlation only</span></div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="section-kicker">11 / CONTACT</div>
+        <h2>Let's build something<br><em>meaningful with data.</em></h2>
+        <p>Ready to learn, adapt, and contribute to data and technology projects.</p>
+        <div class="contact-links">
+          <a href="mailto:wahyudi06062@gmail.com"><small>EMAIL</small><strong>wahyudi06062@gmail.com ↗</strong></a>
+          <a href="https://wa.me/6282283205615" target="_blank" rel="noreferrer"><small>WHATSAPP</small><strong>+62 822 8320 5615 ↗</strong></a>
+          <a href="https://linkedin.com/in/wahyudi-4b443527a" target="_blank" rel="noreferrer"><small>LINKEDIN</small><strong>Connect with me ↗</strong></a>
+          <a href="https://github.com/WahyudiLs7" target="_blank" rel="noreferrer"><small>GITHUB</small><strong>WahyudiLs7 ↗</strong></a>
+        </div>
+      </section>
+    </main>
+    <footer><a class="brand" href="#home">W<span>.</span></a><span>© 2026 Wahyudi · Data Engineering Portfolio</span><a href="#home">Back to top ↑</a></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
