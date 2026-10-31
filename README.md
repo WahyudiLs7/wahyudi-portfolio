@@ -13,7 +13,7 @@ Open `index.html` in a browser.
 5. Select branch `main` and folder `/ (root)`, then save.
 6. Wait for GitHub Pages to publish the site.
 
-Expected URL: `https://WahyudiLs7.github.io/data-portfolio/`
+Expected URL: `https://WahyudiLs7.github.io/wahyudi-portfolio/`
 
 ## Customize
 - Update contact details and links in `index.html`.
